@@ -143,7 +143,8 @@ function Donor() {
     // Handle form submission - Generate QR Code
     const handleSubmit = (e) => {
         e.preventDefault();
-        const donorEmail = selectedBB.mail || "donorEmail"; // Replace with actual donor's email from context/auth
+        const userData_qr = JSON.parse(localStorage.getItem("user"));
+        const donorEmail = userData_qr.email || "donorEmail"; // Replace with actual donor's email from context/auth
         const qrData = `${donationDate}_${donorEmail}`;
         setQrCodeData(qrData);
     };
