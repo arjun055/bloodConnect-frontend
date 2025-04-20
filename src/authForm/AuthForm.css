@@ -1,0 +1,66 @@
+.auth-container {
+    width: 350px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .tab-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .tab-container button {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    background: lightgray;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .tab-container button.active {
+    background: navy;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .auth-form input,
+  .auth-form select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+  }
+  
+  .auth-form button {
+    padding: 10px;
+    background: navy;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .auth-form a {
+    color: blue;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .auth-form .toggle-link {
+    color: blue;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
